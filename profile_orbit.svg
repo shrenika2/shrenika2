@@ -68,6 +68,34 @@
       animation: pulse 4s ease-in-out infinite;
     }
 
+    /* Hover & Pointer Styles for Interactive Elements */
+    .interactive-link {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    /* Glow enhancement on hover */
+    .sandbox-link:hover .planet-body {
+      filter: drop-shadow(0 0 10px #00f0ff);
+      stroke: #00f0ff;
+      stroke-width: 2px;
+    }
+    .career-link:hover .planet-body {
+      filter: drop-shadow(0 0 10px #7b61ff);
+      stroke: #7b61ff;
+      stroke-width: 2px;
+    }
+    .kisan-link:hover .planet-body {
+      filter: drop-shadow(0 0 10px #00ff88);
+      stroke: #00ff88;
+      stroke-width: 2px;
+    }
+    .star-link:hover .star-body {
+      filter: drop-shadow(0 0 20px #7b61ff);
+      stroke: #ffffff;
+      stroke-width: 2px;
+    }
+
     .text-title {
       font-family: 'Space Grotesk', -apple-system, sans-serif;
       font-size: 13px;
@@ -103,34 +131,42 @@
   <circle cx="180" cy="175" r="150" fill="none" stroke="rgba(123, 97, 255, 0.12)" stroke-width="1.5" stroke-dasharray="5 5"/>
 
   <!-- Central Star (Tech Core) -->
-  <g class="center-star">
-    <circle cx="180" cy="175" r="32" fill="url(#star-glow)"/>
-    <circle cx="180" cy="175" r="15" fill="#ffffff" filter="drop-shadow(0 0 6px #7b61ff)"/>
-    <text x="180" y="178" text-anchor="middle" font-family="sans-serif" font-size="7px" font-weight="900" fill="#0b0c16" letter-spacing="0.5px">TECH</text>
-  </g>
+  <a href="https://leetcode.com/u/shrenikapatil2/" target="_blank" class="interactive-link star-link">
+    <g class="center-star">
+      <circle cx="180" cy="175" r="32" fill="url(#star-glow)"/>
+      <circle cx="180" cy="175" r="15" fill="#ffffff" class="star-body" filter="drop-shadow(0 0 6px #7b61ff)"/>
+      <text x="180" y="178" text-anchor="middle" font-family="sans-serif" font-size="7px" font-weight="900" fill="#0b0c16" letter-spacing="0.5px">TECH</text>
+    </g>
+  </a>
 
   <!-- Orbiting Planet 1: Sandbox-IX -->
   <g class="spin-group orbit-1">
-    <!-- Glow -->
-    <circle cx="180" cy="110" r="14" fill="url(#sandbox-glow)" opacity="0.4"/>
-    <!-- Planet body -->
-    <circle cx="180" cy="110" r="7" fill="#00f0ff" stroke="#0b0c16" stroke-width="1.5"/>
+    <a href="https://github.com/shrenika2/distributed-interview-sandbox" target="_blank" class="interactive-link sandbox-link">
+      <!-- Glow -->
+      <circle cx="180" cy="110" r="14" fill="url(#sandbox-glow)" opacity="0.4"/>
+      <!-- Planet body -->
+      <circle cx="180" cy="110" r="7" fill="#00f0ff" class="planet-body" stroke="#0b0c16" stroke-width="1.5"/>
+    </a>
   </g>
 
   <!-- Orbiting Planet 2: CareerGrid -->
   <g class="spin-group orbit-2">
-    <!-- Glow -->
-    <circle cx="290" cy="175" r="18" fill="url(#career-glow)" opacity="0.4"/>
-    <!-- Planet body -->
-    <circle cx="290" cy="175" r="9" fill="#7b61ff" stroke="#0b0c16" stroke-width="1.5"/>
+    <a href="https://github.com/shrenika2/CareerGrid" target="_blank" class="interactive-link career-link">
+      <!-- Glow -->
+      <circle cx="290" cy="175" r="18" fill="url(#career-glow)" opacity="0.4"/>
+      <!-- Planet body -->
+      <circle cx="290" cy="175" r="9" fill="#7b61ff" class="planet-body" stroke="#0b0c16" stroke-width="1.5"/>
+    </a>
   </g>
 
   <!-- Orbiting Planet 3: KisanSetu -->
   <g class="spin-group orbit-3">
-    <!-- Glow -->
-    <circle cx="180" cy="25" r="20" fill="url(#kisan-glow)" opacity="0.4"/>
-    <!-- Planet body -->
-    <circle cx="180" cy="25" r="10" fill="#00ff88" stroke="#0b0c16" stroke-width="1.5"/>
+    <a href="https://github.com/shrenika2/KISAN" target="_blank" class="interactive-link kisan-link">
+      <!-- Glow -->
+      <circle cx="180" cy="25" r="20" fill="url(#kisan-glow)" opacity="0.4"/>
+      <!-- Planet body -->
+      <circle cx="180" cy="25" r="10" fill="#00ff88" class="planet-body" stroke="#0b0c16" stroke-width="1.5"/>
+    </a>
   </g>
 
 
@@ -142,32 +178,40 @@
     <line x1="0" y1="20" x2="200" y2="20" stroke="rgba(123, 97, 255, 0.2)" stroke-width="1"/>
 
     <!-- Legend Item 1: Tech Star -->
-    <g transform="translate(0, 35)">
-      <circle cx="6" cy="6" r="5" fill="#ffffff" stroke="#7b61ff" stroke-width="1.5"/>
-      <text x="20" y="10" class="text-value">Core Star: C++ / Python / JS</text>
-      <text x="20" y="24" class="text-body">Central algorithmic compiler grid</text>
-    </g>
+    <a href="https://leetcode.com/u/shrenikapatil2/" target="_blank" class="interactive-link star-link">
+      <g transform="translate(0, 35)">
+        <circle cx="6" cy="6" r="5" fill="#ffffff" stroke="#7b61ff" stroke-width="1.5"/>
+        <text x="20" y="10" class="text-value" fill="#ffffff">Core Star: Leetcode Knight</text>
+        <text x="20" y="24" class="text-body">Central algorithmic compiler grid</text>
+      </g>
+    </a>
 
     <!-- Legend Item 2: Sandbox-IX -->
-    <g transform="translate(0, 80)">
-      <circle cx="6" cy="6" r="5" fill="#00f0ff"/>
-      <text x="20" y="10" class="text-value">Planet Sandbox-IX [Docker]</text>
-      <text x="20" y="24" class="text-body">CPU isolation &amp; low-latency WebSockets</text>
-    </g>
+    <a href="https://github.com/shrenika2/distributed-interview-sandbox" target="_blank" class="interactive-link sandbox-link">
+      <g transform="translate(0, 80)">
+        <circle cx="6" cy="6" r="5" fill="#00f0ff"/>
+        <text x="20" y="10" class="text-value">Planet Sandbox-IX [Docker]</text>
+        <text x="20" y="24" class="text-body">CPU isolation &amp; low-latency WebSockets</text>
+      </g>
+    </a>
 
     <!-- Legend Item 3: CareerGrid -->
-    <g transform="translate(0, 125)">
-      <circle cx="6" cy="6" r="5" fill="#7b61ff"/>
-      <text x="20" y="10" class="text-value">Planet CareerGrid [MERN/FastAPI]</text>
-      <text x="20" y="24" class="text-body">Decoupled microservice architecture</text>
-    </g>
+    <a href="https://github.com/shrenika2/CareerGrid" target="_blank" class="interactive-link career-link">
+      <g transform="translate(0, 125)">
+        <circle cx="6" cy="6" r="5" fill="#7b61ff"/>
+        <text x="20" y="10" class="text-value">Planet CareerGrid [FastAPI]</text>
+        <text x="20" y="24" class="text-body">Decoupled microservice architecture</text>
+      </g>
+    </a>
 
     <!-- Legend Item 4: KisanSetu -->
-    <g transform="translate(0, 170)">
-      <circle cx="6" cy="6" r="5" fill="#00ff88"/>
-      <text x="20" y="10" class="text-value">Planet KisanSetu [Groq Voice AI]</text>
-      <text x="20" y="24" class="text-body">OTP and Stripe escrow protected trade</text>
-    </g>
+    <a href="https://github.com/shrenika2/KISAN" target="_blank" class="interactive-link kisan-link">
+      <g transform="translate(0, 170)">
+        <circle cx="6" cy="6" r="5" fill="#00ff88"/>
+        <text x="20" y="10" class="text-value">Planet KisanSetu [Voice AI]</text>
+        <text x="20" y="24" class="text-body">OTP and Stripe escrow protected trade</text>
+      </g>
+    </a>
 
     <!-- Border Line -->
     <line x1="0" y1="215" x2="200" y2="215" stroke="rgba(123, 97, 255, 0.2)" stroke-width="1"/>
