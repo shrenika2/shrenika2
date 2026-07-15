@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070814"/>
+      <stop offset="100%" stop-color="#0e1026"/>
+    </linearGradient>
+    
+    <radialGradient id="purple-nebula" cx="30%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7b61ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7b61ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cyan-nebula" cx="80%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Star Glows -->
+    <radialGradient id="star-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#a38cff"/>
+      <stop offset="70%" stop-color="#7b61ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7b61ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="sandbox-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="career-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7b61ff"/>
+      <stop offset="100%" stop-color="#7b61ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="kisan-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    /* CSS Keyframe Animations inside SVG */
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.08); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.9; }
+    }
+
+    .spin-group {
+      transform-origin: 180px 175px;
+      animation: spin linear infinite;
+    }
+    
+    /* Orbit speeds */
+    .orbit-1 { animation-duration: 9s; }
+    .orbit-2 { animation-duration: 16s; }
+    .orbit-3 { animation-duration: 26s; }
+
+    .center-star {
+      transform-origin: 180px 175px;
+      animation: pulse 4s ease-in-out infinite;
+    }
+
+    .text-title {
+      font-family: 'Space Grotesk', -apple-system, sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      fill: #7b61ff;
+      letter-spacing: 2px;
+    }
+
+    .text-body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 11px;
+      fill: #a2a8cc;
+    }
+
+    .text-value {
+      font-family: "Fira Code", monospace;
+      font-size: 11px;
+      fill: #f0f2fc;
+      font-weight: 600;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="600" height="350" rx="16" fill="url(#bg-grad)" stroke="rgba(123, 97, 255, 0.2)" stroke-width="1.5"/>
+  <rect width="600" height="350" rx="16" fill="url(#purple-nebula)"/>
+  <rect width="600" height="350" rx="16" fill="url(#cyan-nebula)"/>
+
+  <!-- ==================== SOLAR SYSTEM ==================== -->
+
+  <!-- Orbit Lines -->
+  <circle cx="180" cy="175" r="65" fill="none" stroke="rgba(123, 97, 255, 0.12)" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <circle cx="180" cy="175" r="110" fill="none" stroke="rgba(123, 97, 255, 0.12)" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="180" cy="175" r="150" fill="none" stroke="rgba(123, 97, 255, 0.12)" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+  <!-- Central Star (Tech Core) -->
+  <g class="center-star">
+    <circle cx="180" cy="175" r="32" fill="url(#star-glow)"/>
+    <circle cx="180" cy="175" r="15" fill="#ffffff" filter="drop-shadow(0 0 6px #7b61ff)"/>
+    <text x="180" y="178" text-anchor="middle" font-family="sans-serif" font-size="7px" font-weight="900" fill="#0b0c16" letter-spacing="0.5px">TECH</text>
+  </g>
+
+  <!-- Orbiting Planet 1: Sandbox-IX -->
+  <g class="spin-group orbit-1">
+    <!-- Glow -->
+    <circle cx="180" cy="110" r="14" fill="url(#sandbox-glow)" opacity="0.4"/>
+    <!-- Planet body -->
+    <circle cx="180" cy="110" r="7" fill="#00f0ff" stroke="#0b0c16" stroke-width="1.5"/>
+  </g>
+
+  <!-- Orbiting Planet 2: CareerGrid -->
+  <g class="spin-group orbit-2">
+    <!-- Glow -->
+    <circle cx="290" cy="175" r="18" fill="url(#career-glow)" opacity="0.4"/>
+    <!-- Planet body -->
+    <circle cx="290" cy="175" r="9" fill="#7b61ff" stroke="#0b0c16" stroke-width="1.5"/>
+  </g>
+
+  <!-- Orbiting Planet 3: KisanSetu -->
+  <g class="spin-group orbit-3">
+    <!-- Glow -->
+    <circle cx="180" cy="25" r="20" fill="url(#kisan-glow)" opacity="0.4"/>
+    <!-- Planet body -->
+    <circle cx="180" cy="25" r="10" fill="#00ff88" stroke="#0b0c16" stroke-width="1.5"/>
+  </g>
+
+
+  <!-- ==================== SIDE HUD CARD (LEGEND) ==================== -->
+  
+  <g transform="translate(365, 30)">
+    <!-- Header Title -->
+    <text x="0" y="10" class="text-title">ORBITAL METRICS HUD</text>
+    <line x1="0" y1="20" x2="200" y2="20" stroke="rgba(123, 97, 255, 0.2)" stroke-width="1"/>
+
+    <!-- Legend Item 1: Tech Star -->
+    <g transform="translate(0, 35)">
+      <circle cx="6" cy="6" r="5" fill="#ffffff" stroke="#7b61ff" stroke-width="1.5"/>
+      <text x="20" y="10" class="text-value">Core Star: C++ / Python / JS</text>
+      <text x="20" y="24" class="text-body">Central algorithmic compiler grid</text>
+    </g>
+
+    <!-- Legend Item 2: Sandbox-IX -->
+    <g transform="translate(0, 80)">
+      <circle cx="6" cy="6" r="5" fill="#00f0ff"/>
+      <text x="20" y="10" class="text-value">Planet Sandbox-IX [Docker]</text>
+      <text x="20" y="24" class="text-body">CPU isolation &amp; low-latency WebSockets</text>
+    </g>
+
+    <!-- Legend Item 3: CareerGrid -->
+    <g transform="translate(0, 125)">
+      <circle cx="6" cy="6" r="5" fill="#7b61ff"/>
+      <text x="20" y="10" class="text-value">Planet CareerGrid [MERN/FastAPI]</text>
+      <text x="20" y="24" class="text-body">Decoupled microservice architecture</text>
+    </g>
+
+    <!-- Legend Item 4: KisanSetu -->
+    <g transform="translate(0, 170)">
+      <circle cx="6" cy="6" r="5" fill="#00ff88"/>
+      <text x="20" y="10" class="text-value">Planet KisanSetu [Groq Voice AI]</text>
+      <text x="20" y="24" class="text-body">OTP and Stripe escrow protected trade</text>
+    </g>
+
+    <!-- Border Line -->
+    <line x1="0" y1="215" x2="200" y2="215" stroke="rgba(123, 97, 255, 0.2)" stroke-width="1"/>
+    
+    <!-- Navigation metrics -->
+    <g transform="translate(0, 235)">
+      <text x="0" y="0" class="text-body">Status: <tspan fill="#00ff88">ORBITS ACTIVE</tspan></text>
+      <text x="0" y="16" class="text-body">Telemetry Rate: <tspan fill="#00f0ff">100% RELIABLE</tspan></text>
+      <text x="0" y="32" class="text-body">Sector: <tspan fill="#ffffff">WALCHAND SYSTEM</tspan></text>
+    </g>
+  </g>
+</svg>
