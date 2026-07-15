@@ -1,17 +1,4 @@
-# 🌌 Shrenika Patil — Nebula Explorer
-
-<div align="center">
-  <img src="profile_orbit.svg" width="100%" alt="Shrenika Patil Space HUD" />
-</div>
-
-<br />
-
----
-
-<details>
-  <summary>📡 Transceiver Text Logs (Plain Text Backup)</summary>
-
-## 🌌 Captain's Log: Orbiting walchand-cse-starship
+# 🌌 Shrenika Patil
 
 ```text
 =============================================================================
@@ -22,39 +9,88 @@
 =============================================================================
 ```
 
-Hello, space explorer! I'm **Shrenika Patil**, a backend systems engineer and competitive programmer navigating the cosmos of distributed architectures, real-time communications, and secure containers.
+<table>
+<tr>
+<td valign="top" width="55%">
+
+### 📁 Technical Log
+I'm a Computer Science & Engineering undergraduate at Walchand College of Engineering. I specialize in backend engineering, distributed task scheduling, real-time audio pipelines, and OS virtualization limits.
+
+*   💻 **Core focus:** Scalable distributed systems, caching architectures.
+*   🛡️ **Virtualization:** Linux namespaces, `cgroups` resource boundaries.
+*   🏆 **Competitive:** Knighthood on LeetCode with 1000+ algorithms solved.
+*   📡 **Leadership:** Main Secretary at CodeChef WCE Chapter.
+
+### 🛠️ Starship Sub-Systems (Skills)
+*   **Languages:** C++ 🚀 | Python 🐍 | JavaScript ⚡ | SQL 💾
+*   **Web & Comm:** Node.js • Express.js • FastAPI • WebSockets • Socket.IO
+*   **Data & Queues:** PostgreSQL • MongoDB • Redis • BullMQ
+*   **DevOps & QA:** Docker • Linux Shell • Git • Jest
+
+### ☄️ Highlighted Orbits (Projects)
+*   **[Sandbox-IX](https://github.com/shrenika2/distributed-interview-sandbox)**: High-security code execution engine with Docker boundaries, BullMQ async queueing, and low-latency audio states.
+*   **[CareerGrid](https://github.com/shrenika2/CareerGrid)**: Decoupled MERN/FastAPI platform built to isolate high CPU resume-parsing operations, using WebSockets for streaming.
+*   **[KisanSetu](https://github.com/shrenika2/KISAN)**: D2C marketplace with Groq LLaMA bilingual voice listings and geospatial search indexing.
+
+</td>
+<td valign="top" width="45%">
+
+```text
+:+%%%%*. -++=:.=-=----++=---=-=+=-:===+++*++*=:-:-. ..:..---::-=:
+.-=+++=-:-+*+-.---:=-::::-=--+-..:...:-=+**++=. .:=**++=-=++==+=-
+---::===--==+==::.-::.---::::           :-=:.:-:=:-+++=====++++=+
+==-=-=+-:-===---:-:.:::===:       ..       . --:-:-:==--:::---=++
++====--=-=----------:--==.     ..:-:.      .-==-:-=----==--===++=
+++++++==================:   :=+++++=:.      ---:::-============-=
++++++++++==============-   .=+******+=-.    :=--:=-=+==++==+====+
++++++++++==++==++++====:   ----+*+=-----.   .--.:+=++=+++==+++==+
++++++++++==+++==++====-.  :-:.:-++--::-==.   .:.-+++++++++++++=++
+=====+++======+++===+=:. .++++==++=++++++=    ..=+++++*++=++++++*
+======+++======++++==.   :+*#+==+===*##*+--=  ..=+++++*++=====+**
++=====++++++==+++++=:    :=++--======**+=-=:  .:=++++***=====+=+*
+=======++======++==:      .+*==+**+==*++-      :====+**+=======++
+=================-.         =+*******+=-        -===+**+======+++
+-----==========-:.          .--====-----        :====++===-===+*+
+.:----==-::.....            .=--=====++: . :::::-::=--+---+-=-=++
+  .----::.....              .=++****++=-.-.-.:=:==+-*+--===-+=--=
+   ::--::::.                -==+++++++=:=:::===-++:===+=++==*+=++
+  .:.::.:.                :-=+++++==--+::=-:===:===-+=+-+=:==-*=*
+   ......                .:+++++==-:=::*-:--==-===+-+-=:-++-*==:-
+   ....      ..         .---:-------===-===-+====:+-+--==-=-+-=-*
+   .        ..        . .--:-:=-=----=+==+--===--:++.--:--+=:--+#
+          ::-.       ...:---=-+=-=-:+-==-==-*=:-:-::=--::--=-+###
+       .:.-:.      ..:..-=+::+----+-+===--+-=-:=:=-:=---:+.-**###
+       ::::.      .:.:.-:-==-+=====--+--=--*-:=..=-:-=::-=-+*####
+     :.  --..    .:..--===-=-+--=--*+.==:--=-:-::=-+-:-=--+****##
+     .=-.=-:-.    ::::-:---*+.=-:---=--=-:--:=-:.:---=---=+*****#
+     .-:--+=...   .:-::-::-:-=-=-:==.*==-:-=.::..-=:=:=-:=*****+*
+     :::-.-:.+-=...-.=--::==.+:--:-+:-:=:::::....=-=.:-+-*++*+#+*
+     ::-===:-+.+-:-.-.:--:.-:.--:=:::::.::..:-:::=-:=-:-=#=+#+*++
+     ::-=+++++=:..::-=:--=-:+-=-:+:----::-.-::::..: .  .+*:=*=++=
+     .:-===+++=- .:=--=:-=+-=---===-+-:=--=-:::::      .*+:-*+=*=
+     .:--====--:  .:--::-.---::--:+-.=-.::=.::..:.   ...*+:-=+-=+
+     ::-----::::...::.:.::-+.-+::-.=:..::.:-..::.    ...=-:--+=--
+    .::----------:-:.:.:==::-::----::::-:-::..:..    ...::-------
+    .-:::---------------:--.:-==:+==-----::-=.:.:    ..:::-------
+```
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🪐 The Planetary Sensor HUD (Projects Orbit)
-
-*   **Planet Sandbox-IX** *(Distributed Interview Sandbox)*: Engineered secure **Docker execution cells** using Linux namespaces and `cgroups` (strict limits: `0.5 CPU core`, `128MB RAM`). Real-time **Socket.IO audio pipeline** with **Redis connection recovery** to safeguard packet delivery.
-*   **Planet CareerGrid** *(Unified Education & Placement Grid)*: Decoupled MERN monolith elements into **FastAPI (Python) microservices** to isolate heavy CPU resume-parsing operations. Built low-latency WebSocket connections with Redis caching.
-*   **Planet KisanSetu** *(Farm2Door Marketplace)*: Integrated a **Groq LLaMA voice assistant** to parse spoken vernacular inputs into structured listing coordinates. Optimized local route calculations using **MongoDB geospatial indexing**.
-
----
-
-## 🛸 Starship Sub-Systems (Technical Skills)
-
-*   **Languages:** C++, Python, JavaScript (ES6+), SQL
-*   **Web & Real-Time Frameworks:** React.js, Node.js, Express.js, FastAPI, Socket.IO, WebSockets
-*   **Databases & Queue Machinery:** MongoDB, PostgreSQL, Redis, BullMQ
-*   **DevOps & Security:** Docker (Container Isolation), Git, Linux Shell, Helmet, bcrypt, Jest
+## 📊 Live System Diagnostics
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=shrenika2&show_icons=true&theme=tokyonight&border_radius=8" height="150" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=shrenika2&layout=compact&theme=tokyonight&border_radius=8" height="150" alt="Top Languages" />
+</p>
 
 ---
 
 ## 📡 Transmission Frequency (Contact)
-*   **LinkedIn:** [linkedin.com/in/shrenika-patil-2b2aa3330/](https://linkedin.com/in/shrenika-patil-2b2aa3330/)
-*   **LeetCode:** [leetcode.com/u/shrenikapatil2/](https://leetcode.com/u/shrenikapatil2/)
-*   **Email:** shrenikapatil0211@gmail.com
+Connect with my transceiver:
 
----
-
-## 🏆 Fleet Commendations (Achievements)
-
-*   **LeetCode Knight Badge:** Maximum rating of **1878** (Top 5% globally) with over 1000+ problems solved.
-*   **CodeChef WCE Chapter:** *Main Secretary (2025 - 2026)*. Organized CP contests, increasing engagement by 35%.
-*   **Reliance Foundation Scholar (2024):** National scholarship award recipient based on academic excellence.
-*   **TechFiesta 2026 International Finalist:** Led team of 6 to the Top 60 out of 700+ teams globally.
-
-</details>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shrenika-patil-2b2aa3330/) 
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/shrenikapatil2/) 
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shrenikapatil0211@gmail.com)
